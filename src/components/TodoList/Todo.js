@@ -3,7 +3,7 @@ import { FaCheck } from 'react-icons/fa'
 
 import styles from './Todo.module.css'
 
-function Todo({ todo, deleteTodo }) {
+function Todo({ todo, deleteTodo, toggleTodo }) {
 	return (
 		<div className={styles.todo}>
 			<RiTodoFill className={styles.todoIcon} />
@@ -12,7 +12,10 @@ function Todo({ todo, deleteTodo }) {
 				className={styles.deleteIcon}
 				onClick={() => deleteTodo(todo.id)}
 			/>
-			<FaCheck className={styles.checkIcon} />
+			<FaCheck
+				className={styles.checkIcon}
+				onClick={() => toggleTodo(todo.id)}
+			/>
 		</div>
 	)
 }
