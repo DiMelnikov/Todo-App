@@ -15,6 +15,6 @@
 - Reset Todos мы можем удалять все задачи из интерфейса
 - Clear Completed Todos мы можем удалять только завершенные задачи
 
-Проект написан с использованием JS, React, html, css
+Проект написан с использованием JS, React, html, css.
 
 Проект доступен по [ссылке](https://tmillers.github.io/Todo-App/)
